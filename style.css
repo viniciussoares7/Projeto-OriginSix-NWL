@@ -33,7 +33,7 @@ body {
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
-h1 {
+.title {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
@@ -85,6 +85,20 @@ h1 {
   background-color: var(--body-color);
 }
 
+main {
+  margin-top: calc(var(--header-height) + 2rem);
+}
+
+/*------------------- LOGO -----------------------*/
+.logo {
+  color: var(--title-color);
+  font: 700 1.31rem 'Poppins', sans-serif;
+}
+.logo span {
+  color: var(--base-color);
+}
+
+/*------------------- NAVIGATION -----------------------*/
 nav.container {
   height: var(--header-height);
   display: flex;
@@ -93,15 +107,29 @@ nav.container {
   width: 100%;
 }
 
-.logo {
-  color: var(--title-color);
-  font: 700 1.31rem 'Poppins', sans-serif;
+nav ul li {
+  text-align: center;
 }
-.logo span {
-  color: var(--base-color);
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
 }
-main {
-  margin-top: var(--header-height);
+/* MOSTRAR MENU (SHOW)*/
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--body-color);
+
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav.show ul.grid {
+  gap: 4rem;
 }
 
 /*------------------- HOME -----------------------*/
