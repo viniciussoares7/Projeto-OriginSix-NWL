@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
-
+    <!-- ICONES -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
     <!--STYLES-->
     <link rel="stylesheet" href="style.css" />
     <!--FONTES-->
@@ -18,7 +19,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container">
         <a class="logo" href="#">beauty<span>salon.</span></a>
         <!-- MENU -->
         <div class="menu">
@@ -31,8 +32,8 @@
           </ul>
         </div>
         <!-- /menu -->
-        <div class="open">...</div>
-        <div class="close">x</div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -56,12 +57,86 @@
       </section>
       <div class="divider-1"></div>
       <section class="section" id="about">
-        <div class="container grid">SOBRE</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Hairdresser"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              animi quas itaque facilis sapiente labore voluptatem cum
+              asperiores impedit laborum, inventore eum modi expedita
+              repudiandae quae hic eligendi amet corrupti!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              quos laborum, facilis corporis, temporibus odit adipisci animi
+              harum dolores necessitatibus iusto nisi commodi cum atque natus
+              eos voluptate omnis aut.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+              deserunt pariatur, rerum error incidunt consequatur alias
+              veritatis ipsa, iste fugiat dolorem vel optio illo voluptatem?
+              Corrupti perspiciatis quasi corporis saepe!
+            </p>
+          </div>
+        </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <section class="section" id="services">
-        <div class="container grid">SERVIÇOS</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat incidunt pariatur tempora at eum quia sint libero,
+                inventore cum sapiente, suscipit optio. In laboriosam, est qui
+                unde quod ipsum eligendi.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Corte</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit, aspernatur ipsam earum numquam qui, repellat
+                fugit rem quaerat sapiente neque nihil? Inventore est sint harum
+                iste aliquam! Rerum, corrupti possimus?
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deserunt sunt quia aut modi veniam nihil voluptatum cum, debitis
+                voluptas tempora architecto soluta error a eveniet
+                necessitatibus temporibus repellat non officia!
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
