@@ -24,15 +24,12 @@ img {
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
+  --title-color: hsla(159, 41%, 10%, 1);
+  --text-color: hsla(0, 0%, 46%, 1);
   --text-color-light: hsl(0% 0% 98%);
   --body-color: hsla(0, 0%, 98%, 1);
-  --body-color2: white;
 }
 /*------------------- BASE -----------------------*/
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font: 400 1rem 'DM Sans', sans-serif;
@@ -260,6 +257,10 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
+#home .container.grid .text .button {
+  color: var(--title-color);
+}
+
 /*------------------- ABOUT -----------------------*/
 #about {
   background: white;
@@ -292,7 +293,9 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 /*------------------- SERVICES -----------------------*/
-
+#services .container.grid header p {
+  color: var(--title-color);
+}
 .cards.grid {
   gap: 1.5rem;
 }
@@ -314,4 +317,90 @@ nav.show div.icon-close {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/*------------------- TESTIMONIALS -----------------------*/
+#testimonials {
+  background: white;
+}
+
+#testimonials .container {
+  /* margin-right: 0;
+  margin-left: 0; */
+}
+
+#testimonials header {
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 0.75rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+#testimonials blockquote p span {
+  font: 550 2rem serif;
+  position: absolute;
+  top: -0.5rem;
+  left: -1.5rem;
+  color: var(--base-color);
+}
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+/* --SWIPER-- */
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*------------------- CONTACT -----------------------*/
+#contact .grid {
+  gap: 4rem;
+}
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact .button {
+  color: var(--body-color);
+}
+#contact ul.grid {
+  gap: 2rem;
+}
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+#contact ul li i {
+  color: var(--base-color);
 }
