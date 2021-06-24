@@ -26,9 +26,13 @@ img {
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsla(159, 41%, 10%, 1);
   --text-color: hsla(0, 0%, 46%, 1);
-  --text-color-light: hsl(0% 0% 98%);
+  --text-color-light: hsla(0, 0%, 98%, 1);
   --body-color: hsla(0, 0%, 98%, 1);
+
+  /* fonts */
+  --title-font-size: 1.825rem;
 }
+
 /*------------------- BASE -----------------------*/
 
 body {
@@ -38,7 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -73,6 +77,7 @@ body {
   );
 }
 /*------------------- LAYOUT -----------------------*/
+
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -122,7 +127,9 @@ main {
 .logo span {
   color: var(--base-color);
 }
-
+.logo.logo-alt span {
+  color: var(--body-color);
+}
 /*------------------- NAVIGATION -----------------------*/
 nav.container {
   height: var(--header-height);
@@ -324,11 +331,6 @@ nav.show div.icon-close {
   background: white;
 }
 
-#testimonials .container {
-  /* margin-right: 0;
-  margin-left: 0; */
-}
-
 #testimonials header {
   margin-bottom: 0;
   margin-left: 1.5rem;
@@ -404,3 +406,62 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
+/*------------------- FOOTER -----------------------*/
+footer {
+  background: var(--base-color);
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer .social i {
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+}
+
+footer .social {
+  display: flex;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  transform: translateY(-5px);
+}
+/*------------------- back to top -----------------------*/
+
+.back-to-top {
+  color: var(--title-color);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.5rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+
+  transform: translateY(150%);
+}
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*------------------- MEDIA QUERIES -----------------------*/
+/* extra large devices: 1200 > */
+/* large devices: 1023 > */
+/* large devices: 992 */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.2rem;
+  }
+}
+/* medium devices: 767 */
