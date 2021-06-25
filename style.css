@@ -19,12 +19,12 @@ img {
   --header-height: 4.5rem;
 
   /* Colors */
-  --hue: 0;
+  --hue: 310;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsla(159, 41%, 10%, 1);
+  --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsla(0, 0%, 46%, 1);
   --text-color-light: hsla(0, 0%, 98%, 1);
   --body-color: hsla(0, 0%, 98%, 1);
@@ -465,10 +465,9 @@ footer .social i.icon-instagram:hover {
     #bc1888 100%
   );
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-decoration-color: transparent;
 }
 
 footer .social i.icon-facebook:hover {
@@ -481,19 +480,17 @@ footer .social i.icon-facebook:hover {
     #0400fa 100%
   );
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-decoration-color: transparent;
 }
 
 footer .social i.icon-youtube:hover {
   background-image: linear-gradient(45deg, #ff000d 75%, #fa0000 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-decoration-color: transparent;
 }
 /*------------------- back to top -----------------------*/
 
