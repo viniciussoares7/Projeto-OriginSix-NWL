@@ -117,3 +117,14 @@ window.addEventListener('scroll', function () {
   backtoTop()
   menuEffect()
 })
+
+/* change color testing - logo  */
+
+const theme = document.querySelector('#header nav a .logo')
+const logoclick = document.querySelectorAll('nav .logo')
+
+for (const element of logoclick) {
+  element.addEventListener('click', function () {
+    nav.classList.toggle('on')
+  })
+}

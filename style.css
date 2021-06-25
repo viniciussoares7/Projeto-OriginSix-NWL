@@ -19,7 +19,7 @@ img {
   --header-height: 4.5rem;
 
   /* Colors */
-  --hue: 159;
+  --hue: 0;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -60,6 +60,9 @@ body {
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+}
+.button span {
+  color: var(--body-color);
 }
 .button:hover {
   background: var(--base-color-alt);
@@ -308,6 +311,13 @@ nav.show div.icon-close {
 #services .container.grid header p {
   color: var(--title-color);
 }
+#services .subtitle strong {
+  color: var(--title-color);
+}
+#services .subtitle span {
+  color: var(--base-color);
+}
+
 .cards.grid {
   gap: 1.5rem;
 }
@@ -411,6 +421,7 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
+
 /*------------------- FOOTER -----------------------*/
 footer {
   background: var(--base-color);
@@ -443,6 +454,47 @@ footer .social {
 footer .social a:hover {
   transform: translateY(-5px);
 }
+
+footer .social i.icon-instagram:hover {
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+}
+
+footer .social i.icon-facebook:hover {
+  background-image: linear-gradient(
+    45deg,
+    #33b4f0 0%,
+    #3c7de6 25%,
+    #2748dc 50%,
+    #1c1fce 75%,
+    #0400fa 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+}
+
+footer .social i.icon-youtube:hover {
+  background-image: linear-gradient(45deg, #ff000d 75%, #fa0000 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+}
 /*------------------- back to top -----------------------*/
 
 .back-to-top {
@@ -465,11 +517,18 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
+/* DARK THEME */
+
+#header .container.on,
+body #header .container.on {
+  --title-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsla(159, 41%, 10%, 1);
+}
+
 /*------------------- MEDIA QUERIES -----------------------*/
 /* extra large devices: >1200 */
 @media (min-width: 1200px) {
   /* reusable classes */
-
   .container {
     max-width: 1120px;
     margin-left: auto;

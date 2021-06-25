@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?yo8xqy');
-  src:  url('fonts/icons.eot?yo8xqy#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?yo8xqy') format('truetype'),
-    url('fonts/icons.woff?yo8xqy') format('woff'),
-    url('fonts/icons.svg?yo8xqy#icons') format('svg');
+  src:  url('fonts/icons.eot?mkxtm4');
+  src:  url('fonts/icons.eot?mkxtm4#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?mkxtm4') format('truetype'),
+    url('fonts/icons.woff?mkxtm4') format('woff'),
+    url('fonts/icons.svg?mkxtm4#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hipster:before {
+  content: "\e90d";
+}
+.icon-emoticon:before {
+  content: "\e90d";
+}
+.icon-smiley:before {
+  content: "\e90d";
+}
+.icon-mustache:before {
+  content: "\e90d";
+}
+.icon-face:before {
+  content: "\e90d";
+}
+.icon-video:before {
+  content: "\e90e";
+}
+.icon-camera:before {
+  content: "\e90e";
+}
+.icon-movie:before {
+  content: "\e90e";
+}
+.icon-camera1:before {
+  content: "\e90f";
+}
 .icon-arrow-up-circle:before {
   content: "\e90c";
 }
