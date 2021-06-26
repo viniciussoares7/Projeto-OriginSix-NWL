@@ -41,7 +41,7 @@
 
 <br>
 
-<p align="center" >👋🏽 Entre em contato! <br> <a href="https://www.linkedin.com/in/soaresvinicius7/" rel="nofollow">Linkedin</a>  <br> <a href="vinicius-a-soares@outlook.com" rel="nofollow">Outlook</a> </p>
+<p align="center" >👋🏽 Entre em contato! <br> <a href="https://www.linkedin.com/in/soaresvinicius7/" rel="nofollow">Linkedin</a>  <br> <a href="mailto:vinicius-a-soares@outlook.com" rel="nofollow">Outlook</a> </p>
 
 
 
