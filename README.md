@@ -21,16 +21,16 @@
 
   
 <h1 align="center" id="tecnologias">  
-    <div><p> HTML <img src="assets\images\html5.svg" alt="html5 " width="50px" /></p>
+    <div><p> HTML &nbsp; &nbsp; &nbsp; &nbsp; <img src="assets\images\html5.svg" alt="html5 " width="35px" /></p>
         </p></div> 
-    <div> <p> CSS
-        <img src="assets\images\css3.svg" alt="css3" width = "50" />
+    <div> <p> CSS  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <img src="assets\images\css3.svg" alt="css3" width = "35" />
         </p>
 </div>
 </div>
 <div>
-    <p> JavaScript
-    <img src="assets\images\javascript.svg" alt="javascript" width = "50" /></p></div>
+    <p> JavaScript &nbsp;
+    <img src="assets\images\javascript.svg" alt="javascript" width = "35" /></p></div>
     </h1></p>
 <br>
 <br>
