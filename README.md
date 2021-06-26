@@ -11,7 +11,7 @@
 
 
 
-<div align="center" ><a href="https://viniciussoares7.github.io/Projeto-OriginSix-NWL/"> Link do projeto web </a></div>
+<div align="center" ><a href="https://viniciussoares7.github.io/Projeto-OriginSix-NWL/"  target="_blank" > Link do projeto web </a></div>
 <br>
 <br>
 <br>
