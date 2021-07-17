@@ -1,5 +1,6 @@
-<h1 align="center" ><img src="assets\images\PhotographerCo..png" alt="1" style="zoom:50%;" width="300px" height="250px" /></h1>
-
+<br>
+<kbd>
+<h1 align="center" border-radius="2px" ><img src="assets\images\PhotographerCo..png" alt="1" style="zoom:50%;" width="300px" height="250px" /></h1>
 <h1 align="center">OriginSix - PhotographerCo.</h1>
 
 <p id="objetivo" align="center">Projeto web realizado durante a NWL Together na trilha Origin.</p>
